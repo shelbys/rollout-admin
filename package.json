@@ -1,0 +1,17 @@
+{
+  "name": "rollout-admin",
+  "version": "0.0.1",
+  "author": "Daniel Fagnan <dnfagnan@gmail.com>",
+  "dependencies": {
+    "rollout": "0.0.2",
+    "express": "3.x.x"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "zombie": "*"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  }
+}
