@@ -10,6 +10,9 @@
     "mocha": "*",
     "zombie": "*"
   },
+  "bin": {
+    "rollout-admin": "./bin/rollout-admin"
+  },
   "license": "MIT",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha"
