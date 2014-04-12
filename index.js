@@ -10,6 +10,6 @@ exports = module.exports = function(redis) {
 
 app.use(app.router);
 
-app.get('/', function() {
+app.get('/', function(req, res) {
   res.send('Hello World');
 });

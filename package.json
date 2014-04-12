@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "author": "Daniel Fagnan <dnfagnan@gmail.com>",
   "dependencies": {
-    "rollout": "0.0.2",
-    "express": "3.x.x"
+    "express": "3.x.x",
+    "redis": "^0.10.1",
+    "rollout": "0.0.2"
   },
   "devDependencies": {
     "mocha": "*",

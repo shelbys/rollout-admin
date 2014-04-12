@@ -1,5 +1,13 @@
 #!/usr/bin/env node
 
+var redis = require('redis');
+var admin = require('..');
+var port  = process.env.NODE_PORT || 4555;
+var conn = {
+  host: 'localhost',
+  port: 6379
+};
+
 process.argv.slice(2).forEach(function(arg){
   var flag = arg.split('=')[0];
 
@@ -7,6 +15,18 @@ process.argv.slice(2).forEach(function(arg){
     case '-v':
       return console.log('+Rollout Admin v0.0.1');
     break;
+    case '--host':
+      conn.host = arg.split('=')[1];
+    break;
+    case '--port':
+      conn.port = arg.split('=')[1];
+    break;
   }
 
+});
+
+var client = redis.createClient(conn.port, conn.host);
+
+admin().listen(port, function() {
+  console.log('Rollout admin listening on port %s', port);
 });
