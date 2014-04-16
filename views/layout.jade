@@ -1,0 +1,19 @@
+html
+  head
+    title Rollout Admin
+    link(rel="stylesheet", href="/public/css/index.css")
+  body
+    .container
+      header
+        | Rollout Admin
+        ul
+          li
+            a(href="/") Home
+          li
+            a(href="/groups") Groups
+          li
+            a(href="/users") Users
+          li
+            a(href="/deactivate") Deactivate
+      div.content
+        block content

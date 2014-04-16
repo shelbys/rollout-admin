@@ -1,0 +1,7 @@
+extends ../layout
+
+block content
+  h1 Add Feature to #{group}
+  form(action="/groups/#{group}/features", method="POST")
+    input(type="text", name="feature", placeholder="Name")
+    button(type="submit") Add

@@ -1,0 +1,32 @@
+body {
+  font-size: 18px;
+  font-family: "Helvetica Neue";
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+}
+
+header ul, header li {
+  display: inline-block;
+  list-style: none;
+}
+
+header li {
+  margin-left: 10px;
+}
+
+ul.features, ul.features li {
+  list-style: none;
+}
+
+.features a {
+  position: relative;
+  left: 10px;
+}

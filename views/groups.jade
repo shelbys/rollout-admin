@@ -1,0 +1,9 @@
+extends ./layout
+
+block content
+  h1 Groups
+  ul
+    - for (var i = 0; i < groups.length; i++) {
+    li
+      a(href="/groups/" + groups[i])=groups[i]
+    - }

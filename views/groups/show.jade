@@ -1,0 +1,13 @@
+extends ./../layout
+
+block content
+  h1 Group 
+     !=group
+
+  h3 Features
+  a(href="/groups/#{group}/features/add") New
+  ul.features
+    each feature in features
+      li
+        span=feature
+        a(href="/groups/#{group}/features/#{feature}/remove") remove
