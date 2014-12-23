@@ -5,7 +5,9 @@ var rollout = null;
 
 exports = module.exports = function(redis) {
   rollout = Rollout.create(redis);
-  return app;
+  topLevelApp = express();
+  topLevelApp.use('/rollout', app)
+  return topLevelApp;
 };
 
 app.set('view engine', 'jade');

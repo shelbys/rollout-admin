@@ -3,6 +3,6 @@ extends ./layout
 block content
   h1 Deactivate
 
-  form(action="/deactivate", method="POST")
+  form(action="/rollout/deactivate", method="POST")
     input(type="text", name="feature", placeholder="Feature")
     button(type="submit") Deactivate
