@@ -1,4 +1,5 @@
 var express = require('express');
+var methodOverride = require('method-override');
 var Rollout = require('rollout');
 var app     = express();
 var rollout = null;
@@ -17,7 +18,7 @@ app.use('/public', express.static(__dirname + '/public'));
 app.use(express.compress());
 app.use(express.urlencoded());
 app.use(express.json());
-app.use(express.methodOverride());
+app.use(methodOverride());
 app.use(app.router);
 
 app.get('/', function(req, res) {
