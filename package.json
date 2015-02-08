@@ -1,13 +1,13 @@
 {
   "name": "rollout-admin",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Daniel Fagnan <dnfagnan@gmail.com>",
   "dependencies": {
     "express": "3.x.x",
     "jade": "^1.3.1",
     "method-override": "~2.3.0",
     "redis": "^0.10.1",
-    "rollout": "0.1.0"
+    "rollout": "git+https://github.com/shelbys/rollout.git"
   },
   "devDependencies": {
     "mocha": "*",
