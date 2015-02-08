@@ -1,0 +1,13 @@
+extends ./../layout
+
+block content
+  h1 User: 
+     !=user
+
+  h3 Features
+  a(href="/rollout/users/#{user}/features/add") New
+  ul.features
+    each feature in features
+      li
+        span=feature
+        a(href="/rollout/users/#{user}/features/#{feature}/remove") remove

@@ -1,0 +1,9 @@
+extends ./layout
+
+block content
+  h1 Users
+  ul
+    - for (var i = 0; i < users.length; i++) {
+    li
+      a(href="/rollout/users/" + users[i])=users[i]
+    - }
