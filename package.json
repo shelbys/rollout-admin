@@ -1,6 +1,6 @@
 {
   "name": "rollout-admin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Daniel Fagnan <dnfagnan@gmail.com>",
   "dependencies": {
     "express": "3.x.x",

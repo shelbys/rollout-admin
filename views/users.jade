@@ -3,7 +3,7 @@ extends ./layout
 block content
   h1 Users
   ul
-    - for (var i = 0; i < users.length; i++) {
+    - for (var i = 0; i < users.sort().length; i++) {
     li
       a(href="/rollout/users/" + users[i])=users[i]
     - }
