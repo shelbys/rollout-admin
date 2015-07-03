@@ -1,3 +1,6 @@
+var bodyParser = require('body-parser');
+var compression = require('compression');
+var errorHandler = require('errorhandler');
 var express = require('express');
 var methodOverride = require('method-override');
 var Rollout = require('rollout');
@@ -13,13 +16,12 @@ exports = module.exports = function(redis) {
 
 app.set('view engine', 'jade');
 app.set('views', __dirname + '/views');
-app.use(express.errorHandler());
+app.use(errorHandler());
 app.use('/public', express.static(__dirname + '/public'));
-app.use(express.compress());
-app.use(express.urlencoded());
-app.use(express.json());
+app.use(compression());
+app.use(bodyParser.urlencoded());
+app.use(bodyParser.json());
 app.use(methodOverride());
-app.use(app.router);
 
 app.get('/', function(req, res) {
   res.render('index');
