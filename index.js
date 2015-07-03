@@ -19,7 +19,7 @@ app.set('views', __dirname + '/views');
 app.use(errorHandler());
 app.use('/public', express.static(__dirname + '/public'));
 app.use(compression());
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(methodOverride());
 
