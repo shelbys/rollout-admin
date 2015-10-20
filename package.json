@@ -1,6 +1,6 @@
 {
   "name": "rollout-admin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Daniel Fagnan <dnfagnan@gmail.com>",
   "dependencies": {
     "body-parser": "^1.13.1",
@@ -9,7 +9,7 @@
     "express": "^4.13.0",
     "jade": "^1.11.0",
     "method-override": "~2.3.3",
-    "redis": "^0.12.1",
+    "redis": "^2.2.5",
     "rollout": "git+https://github.com/shelbys/rollout.git"
   },
   "devDependencies": {
